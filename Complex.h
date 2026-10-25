@@ -1,0 +1,27 @@
+#pragma once
+class Complex
+{
+private:
+	double re;
+	double img;
+public:
+	Complex(double, double);
+	Complex(Complex& c);
+	void afficher();
+	Complex operator-(Complex& c)const;
+	Complex operator-(double& b)const;
+	Complex operator+(Complex& c)const;
+	Complex operator+(double& b)const;
+	Complex operator*(Complex& c)const;
+	Complex operator*(double& b)const;
+	Complex operator/(Complex& c)const;
+	Complex operator/(double& b)const;
+	bool operator==(const Complex& c)const;
+	bool operator!=(const Complex& c)const;
+	bool operator>(const Complex& c)const;
+	bool operator>(const double& c)const;
+	bool operator<(const Complex& c)const;
+	bool operator<(const double& c)const;
+	~Complex();
+};
+
